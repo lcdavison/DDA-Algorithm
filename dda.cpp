@@ -68,7 +68,7 @@ int main(int argc, char* argv[])
 			switch(event.type) 
 			{
 				case SDL_QUIT:
-					break;
+					return 0;
 			}
 		}
 
