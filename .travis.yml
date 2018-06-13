@@ -1,6 +1,10 @@
+language:
+  - cpp
+
 before_install:
-- sudo apt-get-repository -y ppa:team-xbmc/ppa
-- sudo apt-get update -qq
-- sudo apt-get install -y libsdl2-dev
+  - sudo apt-get-repository -y ppa:team-xbmc/ppa
+  - sudo apt-get update -qq
+  - sudo apt-get install -y libsdl2-dev
+  
 script:
-- g++ -o draw_line dda.cpp -I /usr/include/SDL2/ -lSDL2
+  - g++ -o draw_line dda.cpp -I /usr/include/SDL2/ -lSDL2
