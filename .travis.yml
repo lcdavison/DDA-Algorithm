@@ -10,3 +10,6 @@ before_install:
   
 script:
   - g++ -o draw_line dda.cpp -I /usr/include/SDL2/ -lSDL2
+
+after_success: 
+- bash <(curl -s https://codecov.io/bash)
